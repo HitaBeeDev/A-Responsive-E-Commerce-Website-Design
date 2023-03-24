@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700&display=swap");
 
 :root {
-  --c0: #424874;
-  --c1: #a6b1e1;
-  --c2: #dcd6f7;
-  --c3: #f4eeff;
+  --primary: #424874;
+  --secondary: #a6b1e1;
+  --Tertiary: #dcd6f7;
+  --Quaternary: #f4eeff;
 }
 
 * {
@@ -37,23 +37,23 @@ section {
   text-align: center;
   text-transform: uppercase;
   font-size: 4rem;
-  color: var(--c0);
+  color: var(--primary);
   padding: 1rem;
 }
 
 .heading span {
   text-transform: uppercase;
-  color: var(--c0);
+  color: var(--primary);
 }
 
 .btn {
   display: inline-block;
   margin-top: 1rem;
   border-radius: 0.5rem;
-  border: 0.2rem solid var(--c0);
+  border: 0.2rem solid var(--primary);
   font-weight: bolder;
   font-size: 1.7rem;
-  color: var(--c0);
+  color: var(--primary);
   cursor: pointer;
   background: #fff;
   padding: 0.8rem 3rem;
@@ -61,7 +61,7 @@ section {
 
 .btn:hover {
   color: #fff;
-  background: var(--c2);
+  background: var(Tertiary);
 }
 
 header {
@@ -80,33 +80,33 @@ header {
 
 header .logo {
   font-size: 2.5rem;
-  color: var(--c0);
+  color: var(--primary);
 }
 
 header .navbar a {
   font-size: 1.7rem;
-  color: var(--c0);
+  color: var(--primary);
   margin: 0 1rem;
 }
 
 header .navbar a:hover {
-  color: var(--c2);
+  color: var(--Tertiary);
 }
 
 header .icons a {
   font-size: 2.5rem;
-  color: var(--c0);
+  color: var(--primary);
   margin-left: 1.5rem;
 }
 
 header .icons a:hover {
-  color: var(--c2);
+  color: var(--Tertiary);
 }
 
 #menu-bar {
   font-size: 2.5rem;
   padding: 0.5rem 1.5rem;
-  border: 0.1rem solid var(--c0);
+  border: 0.1rem solid var(--primary);
   color: var(--grey);
   border-radius: 0.3rem;
   cursor: pointer;
@@ -160,17 +160,17 @@ header .icons a:hover {
 
 .home .slide-container .slide .content span {
   font-size: 1.5rem;
-  color: var(--c0);
+  color: var(--primary);
 }
 
 .home .slide-container .slide .content h3 {
   font-size: 4rem;
-  color: var(--c0);
+  color: var(--primary);
 }
 
 .home .slide-container .slide .content p {
   font-size: 1.7rem;
-  color: var(--c0);
+  color: var(--primary);
   padding: 0.5rem 0;
 }
 
@@ -211,8 +211,8 @@ header .icons a:hover {
   width: 5rem;
   line-height: 4.5rem;
   font-size: 2rem;
-  color: var(--c2);
-  border: 0.2rem solid var(--c2);
+  color: var(--Tertiary);
+  border: 0.2rem solid var(--Tertiary);
   cursor: pointer;
   text-align: center;
 }
@@ -220,7 +220,7 @@ header .icons a:hover {
 .home #prev:hover,
 .home #next:hover {
   color: #fff;
-  background: var(--c2);
+  background: var(--Tertiary);
 }
 
 .home #prev {
@@ -257,18 +257,18 @@ header .icons a:hover {
 
 .content span {
   font-size: 1.6rem;
-  color: var(--c0);
+  color: var(--primary);
 }
 
 .content h3 {
   font-size: 1.2rem;
-  color: var(--c0);
+  color: var(--primary);
   margin: 1rem 0;
 }
 
 .content p {
   font-size: 1.8rem;
-  color: var(--c0);
+  color: var(--primary);
   line-height: 1.6;
   margin-bottom: 2rem;
 }
@@ -309,18 +309,18 @@ header .icons a:hover {
 
 .service .box-container .box i {
   font-size: 4rem;
-  color: var(--c1);
+  color: var(--secondary);
 }
 
 .service .box-container .box h3 {
   font-size: 2rem;
-  color: var(--c0);
+  color: var(--primary);
   padding-top: 1rem;
 }
 
 .service .box-container .box p {
   font-size: 1.5rem;
-  color: var(--c0);
+  color: var(--primary);
   padding: 1rem 0;
 }
 
@@ -384,25 +384,25 @@ header .icons a:hover {
   width: 3rem;
   line-height: 3rem;
   font-size: 1.5rem;
-  color: var(--c0);
-  border: 0.1rem solid var(--c0);
+  color: var(--primary);
+  border: 0.1rem solid var(--primary);
   border-radius: 0.5rem;
   background: #fff;
   margin-top: 0.5rem;
 }
 
 .products .box-container .box .icons a:hover {
-  background: var(--c3);
-  color: var(--c1);
+  background: var(--Quaternary);
+  color: var(--secondary);
 }
 
 .products .box-container .box .content h3 {
-  color: var(--c0);
+  color: var(--primary);
   font-size: 1.5rem;
 }
 
 .products .box-container .box .content .price {
-  color: var(--c0);
+  color: var(--primary);
   font-size: 2rem;
   font-weight: bolder;
   padding: 1rem 0;
@@ -414,7 +414,7 @@ header .icons a:hover {
 
 .products .box-container .box .content .stars i {
   font-size: 1.5rem;
-  color: var(--c1);
+  color: var(--secondary);
 }
 
 .featured .row {
@@ -475,24 +475,24 @@ header .icons a:hover {
 
 .featured .row .content h3 {
   font-size: 2.2rem;
-  color: var(--c0);
+  color: var(--primary);
 }
 
 .featured .row .content .stars i {
   font-size: 1.5rem;
-  color: var(--c1);
+  color: var(--secondary);
   padding: 0.5rem 0;
 }
 
 .featured .row .content p {
   font-size: 1.7rem;
-  color: var(--c0);
+  color: var(--primary);
   padding: 1rem 0;
 }
 
 .featured .row .content .price {
   font-size: 2rem;
-  color: var(--c0);
+  color: var(--primary);
   font-weight: bolder;
 }
 
@@ -521,17 +521,17 @@ header .icons a:hover {
 
 .review .box-container .box h3 {
   font-size: 2rem;
-  color: var(--c0);
+  color: var(--primary);
 }
 
 .review .box-container .box p {
   font-size: 1.5rem;
-  color: var(--c0);
+  color: var(--primary);
   padding: 1rem 0;
 }
 
 .review .box-container .box .stars i {
-  color: var(--c0);
+  color: var(--primary);
 }
 
 .newsletter {
@@ -549,12 +549,12 @@ header .icons a:hover {
 
 .newsletter .content h3 {
   font-size: 2.5rem;
-  color: var(--c0);
+  color: var(--primary);
 }
 
 .newsletter .content p {
   font-size: 1.4rem;
-  color: var(--c0);
+  color: var(--primary);
   margin: 1rem auto;
   max-width: 60rem;
 }
@@ -569,9 +569,9 @@ header .icons a:hover {
   width: 100%;
   font-size: 1.7rem;
   text-transform: none;
-  color: var(--c1);
+  color: var(--secondary);
   padding: 1rem;
-  border: 0.2rem solid var(--c0);
+  border: 0.2rem solid var(--primary);
 
   margin-top: 1rem;
   border-radius: 1rem;
@@ -597,20 +597,20 @@ header .icons a:hover {
 }
 
 .footer .box-container .box h3 {
-  color: var(--c0);
+  color: var(--primary);
   font-size: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
 .footer .box-container .box a {
-  color: var(--c0);
+  color: var(--primary);
   font-size: 1.5rem;
   padding-bottom: 1.5rem;
   display: block;
 }
 
 .footer .box-container .box a:hover {
-  color: var(--c2);
+  color: var(--Tertiary);
 }
 
 .footer .box-container .credit {
@@ -620,7 +620,7 @@ header .icons a:hover {
   font-size: 1.5rem;
   padding: 1rem;
   padding-top: 2rem;
-  color: var(--c0);
+  color: var(--primary);
 }
 
 .footer .box-container .credit span {
@@ -665,7 +665,7 @@ header .icons a:hover {
   header .navbar a {
     font-size: 2rem;
     background: #fff;
-    border: 0.1rem solid var(--c0);
+    border: 0.1rem solid var(--primary);
     border-radius: 0.5rem;
     padding: 1.5rem;
     margin: 1.5rem;
