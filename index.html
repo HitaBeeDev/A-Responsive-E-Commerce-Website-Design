@@ -4,33 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alpyn Beauty Products</title>
-
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
       class="stylesheet"
     />
     <link rel="stylesheet" href="style.css" class="stylesheet" />
+    <title>Alpyn Beauty Products</title>
   </head>
-  <body>
-    
-    <header>
-      <div id="menu-bar" class="fas fa-bars"></div>
-      <a href="#" class="logo">Alpyn Beauty</a>
 
-      <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#featured">Featured</a>
-        <a href="#review">Review</a>
+  <body>
+    <header class="header">
+      <div id="menu-bar" class="header__menu-bar fas fa-bars"></div>
+      <a href="#" class="header__logo">Alpyn Beauty</a>
+
+      <nav class="header__navbar navbar">
+        <a href="#home" class="navbar__link">Home</a>
+        <a href="#products" class="navbar__link">Products</a>
+        <a href="#featured" class="navbar__link">Featured</a>
+        <a href="#review" class="navbar__link">Review</a>
       </nav>
 
-      <div class="icons">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-shopping-cart"></a>
-        <a href="#" class="fas fa-user"></a>
+      <div class="header__icons">
+        <a href="#" class="icons__link fas fa-heart"></a>
+        <a href="#" class="icons__link fas fa-shopping-cart"></a>
+        <a href="#" class="icons__link fas fa-user"></a>
+        <a href="#" class="icons__link fas fa-moon" id="dark"></a>
+
+        
       </div>
     </header>
 
@@ -40,9 +41,9 @@
         <div class="slide-container active">
           <div class="slide">
             <div class="slide__content">
-              <span> Body Care Products </span>
-              <h1>ANTI-AGING</h1>
-              <p>
+              <span class="slide__content-subtitle"> Body Care Products </span>
+              <h1 class="slide__content-title">ANTI-AGING</h1>
+              <p class="slide__content-description">
                 Alpyn Beauty's anti-aging products use natural ingredients to
                 minimize fine lines and wrinkles, boost collagen, and hydrate
                 the skin. Their line includes the PlantGenius® Eye Balm, Melt
@@ -52,7 +53,7 @@
               <a href="#" class="btn">Add to cart</a>
             </div>
             <div class="slide__image">
-              <img src="images/Home/2.jpg" class="pro" alt="Home page"/>
+              <img src="images/Home/2.jpg" class="slide__image-image" alt="Home page"/>
             </div>
           </div>
         </div>
@@ -60,9 +61,9 @@
         <div class="slide-container">
           <div class="slide">
             <div class="slide__content">
-              <span>Body Care Products</span>
-              <h1>FINE LINES & WRINKLES</h1>
-              <p>
+              <span class="slide__content-subtitle">Body Care Products</span>
+              <h1 class="slide__content-title">FINE LINES & WRINKLES</h1>
+              <p class="slide__content-description">
                 Alpyn Beauty's anti-aging products use natural ingredients to
                 minimize fine lines and wrinkles, boost collagen, and hydrate
                 the skin. Their line includes the PlantGenius® Eye Balm, Melt
@@ -72,7 +73,7 @@
               <a href="#" class="btn">Add to cart</a>
             </div>
             <div class="slide__image">
-              <img src="images/Home/1.jpg" class="pro" alt="Home page picture"/>
+              <img src="images/Home/1.jpg" class="slide__image-image" alt="Home page picture"/>
             </div>
           </div>
         </div>
@@ -80,9 +81,9 @@
         <div class="slide-container">
           <div class="slide">
             <div class="slide__content">
-              <span>Body Care Products </span>
-              <h1>DRYNESS</h1>
-              <p>
+              <span class="slide__content-subtitle">Body Care Products </span>
+              <h1 class="slide__content-title">DRYNESS</h1>
+              <p class="slide__content-description">
                 Alpyn Beauty's dryness products effectively combat dry skin with
                 natural ingredients like squalane, hyaluronic acid, and shea
                 butter. Their line includes a moisturizer, serum, and eye cream,
@@ -91,7 +92,7 @@
               <a href="#" class="btn">Add to cart</a>
             </div>
             <div class="slide__image">
-              <img src="images/Home/3.jpg" class="pro" alt="Home page"/>
+              <img src="images/Home/3.jpg" class="slide__image-image" alt="Home page"/>
             </div>
           </div>
         </div>
@@ -102,165 +103,163 @@
     </div>
     </section>
 
-      <section class="service">
-        <div class="service__box-container box-container">
+    <section class="service">
+      <div class="service__box-container box-container">
 
-          <div class="box-container__box box">
-            <i class="fas fa-shipping-fast"></i>
-            <h1>Fast delivery</h1>
-            <p>Experience the convenience of same-day delivery and enjoy a hassle-free shopping experience with us.
-            </p>
+        <div class="box-container__box">
+          <i class="box__icon fas fa-shipping-fast"></i>
+          <h1 class="box__title">Fast delivery</h1>
+          <p class="box__description">Experience the convenience of same-day delivery and enjoy a hassle-free shopping experience with us.
+          </p>
+        </div>
+
+        <div class="box-container__box">
+          <i class="box__icon fas fa-undo"></i>
+          <h1 class="box__title">Replacement within 10 days</h1>
+          <p class="box__description">We guarantee replacement of our products within 10 days of purchase for your peace of mind and satisfaction. 
+          </p>
+        </div>
+
+        <div class="box-container__box">
+          <i class="box__icon fas fa-headset"></i>
+          <h1 class="box__title">24/7 Support</h1>
+          <p class="box__description">Our committed support team is available 24 hours a day, 7 days a week to assist you with any questions or concerns you may have. 
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <h1 class="products__heading heading">Latest Products</h1>
+      <div class="products__box-container box-container">
+
+        <div class="products__box box">
+          <div class="products__icons icons">
+            <a href="#" class="products__icon fas fa-heart"></a>
+            <a href="#" class="products__icon fas fa-share"></a>
+            <a href="#" class="products__icon far fa-eye"></a>
           </div>
-
-          <div class="box-container__box box">
-            <i class="fas fa-undo"></i>
-            <h1>Replacement within 10 days</h1>
-            <p>We guarantee replacement of our products within 10 days of purchase for your peace of mind and satisfaction. 
-            </p>
+          <img src="images/Products/p1.jpg" alt="MELT MOISTURIZER WITH BAKUCHIOL AND SQUALANE" class="products__image">
+          <div class="products__content">
+            <h2 class="products__title">MELT MOISTURIZER WITH BAKUCHIOL AND SQUALANE</h2>
+          <div class="products__content__price">$60</div>
+          <div class="products__content__stars">
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
           </div>
-
-          <div class="box-container__box box">
-            <i class="fas fa-headset"></i>
-            <h1>24/7 Support</h1>
-            <p>Our committed support team is available 24 hours a day, 7 days a week to assist you with any questions or concerns you may have. 
-            </p>
+          <a href="#" class="btn">Add to Cart</a>
           </div>
         </div>
-      </section>
 
-
-      <section class="products" id="products">
-        <h1 class="products__heading heading"> latest <span>products</span></h1>
-
-        <div class="products__box-container box-container">
-
-          <div class="products__box box">
-            <div class="products__icons icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="fas fa-share"></a>
-              <a href="#" class="far fa-eye"></a>
-            </div>
-            <img src="images/Products/p1.jpg" alt="MELT MOISTURIZER WITH BAKUCHIOL AND SQUALANE">
-            <div class="products__content content">
-              <h2>MELT MOISTURIZER WITH BAKUCHIOL AND SQUALANE</h2>
-            <div class="products__content__price price">$60</div>
-            <div class="products__content__stars stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <a href="#" class="btn">Add to Cart</a>
-            </div>
+        <div class="products__box box">
+          <div class="products__icons icons">
+            <a href="#" class="products__icon fas fa-heart"></a>
+            <a href="#" class="products__icon fas fa-share"></a>
+            <a href="#" class="products__icon far fa-eye"></a>
           </div>
-
-          <div class="products__box box">
-            <div class="products__icons icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="fas fa-share"></a>
-              <a href="#" class="far fa-eye"></a>
-            </div>
-            <img src="images/Products/p2.jpg" alt="WILD HUCKLEBERRY 8-ACID POLISHING PEEL">
-            <div class="products__content content">
-              <h2>WILD HUCKLEBERRY 8-ACID POLISHING PEEL</h2>
-            <div class="products__content__price price">$56</div>
-            <div class="products__content__stars stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <a href="#" class="btn">Add to Cart</a>
-            </div>
+          <img src="images/Products/p2.jpg" alt="WILD HUCKLEBERRY 8-ACID POLISHING PEEL" class="products__image">
+          <div class="products__content">
+            <h2 class="products__title">WILD HUCKLEBERRY 8-ACID POLISHING PEEL</h2>
+          <div class="products__content__price">$56</div>
+          <div class="products__content__stars">
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
           </div>
-
-          <div class="products__box box">
-            <div class="products__icons icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="fas fa-share"></a>
-              <a href="#" class="far fa-eye"></a>
-            </div>
-            <img src="images/Products/p3.jpg" alt="LINE-FILLING EYE BALM WITH BAKUCHIOL AND CAFFEINE">
-            <div class="products__content content">
-              <h2>LINE-FILLING EYE BALM WITH BAKUCHIOL AND CAFFEINE</h2>
-            <div class="products__content__price price">$62</div>
-            <div class="products__content__stars stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <a href="#" class="btn">Add to Cart</a>
-            </div>
-          </div>
-
-          <div class="products__box box">
-            <div class="products__icons icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="fas fa-share"></a>
-              <a href="#" class="far fa-eye"></a>
-            </div>
-            <img src="images/Products/p4.jpg" alt="JUNEBERRY & COLLAGEN HYDRATING CREAM CLEANSER">
-            <div class="products__content content">
-              <h2>JUNEBERRY & COLLAGEN HYDRATING CREAM CLEANSER</h2>
-            <div class="products__content__price price">$39</div>
-            <div class="products__content__stars stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <a href="#" class="btn">Add to Cart</a>
-            </div>
-          </div>
-
-          <div class="products__box box">
-            <div class="products__icons icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="fas fa-share"></a>
-              <a href="#" class="far fa-eye"></a>
-            </div>
-            <img src="images/Products/p5.jpg" alt="WILLOW & SWEET AGAVE PLUMPING LIP MASK">
-            <div class="products__content content">
-              <h2>WILLOW & SWEET AGAVE PLUMPING LIP MASK</h2>
-            <div class="products__content__price price">$28</div>
-            <div class="products__content__stars stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <a href="#" class="btn">Add to Cart</a>
-            </div>
-          </div>
-
-          <div class="products__box box">
-            <div class="products__icons icons">
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="fas fa-share"></a>
-              <a href="#" class="far fa-eye"></a>
-            </div>
-            <img src="images/Products/p6.jpg" alt="TRIPLE VITAMIN C BRIGHTENING BOUNCE CREAM MOISTURIZER">
-            <div class="content">
-              <h2>TRIPLE VITAMIN C BRIGHTENING BOUNCE CREAM MOISTURIZER</h2>
-            <div class="products__content__price price">$49</div>
-            <div class="products__content__stars stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <a href="#" class="btn">Add to Cart</a>
-            </div>
+          <a href="#" class="btn">Add to Cart</a>
           </div>
         </div>
-      </section>
+
+        <div class="products__box box">
+          <div class="products__icons icons">
+            <a href="#" class="products__icon fas fa-heart"></a>
+            <a href="#" class="products__icon fas fa-share"></a>
+            <a href="#" class="products__icon far fa-eye"></a>
+          </div>
+          <img src="images/Products/p3.jpg" alt="LINE-FILLING EYE BALM WITH BAKUCHIOL AND CAFFEINE" class="products__image">
+          <div class="products__content">
+            <h2 class="products__title">LINE-FILLING EYE BALM WITH BAKUCHIOL AND CAFFEINE</h2>
+          <div class="products__content__price">$62</div>
+          <div class="products__content__stars">
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star far fa-star"></i>
+          </div>
+          <a href="#" class="btn">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="products__box box">
+          <div class="products__icons icons">
+            <a href="#" class="products__icon fas fa-heart"></a>
+            <a href="#" class="products__icon fas fa-share"></a>
+            <a href="#" class="products__icon far fa-eye"></a>
+          </div>
+          <img src="images/Products/p4.jpg" alt="JUNEBERRY & COLLAGEN HYDRATING CREAM CLEANSER" class="products__image">
+          <div class="products__content">
+            <h2 class="products__title">JUNEBERRY & COLLAGEN HYDRATING CREAM CLEANSER</h2>
+          <div class="products__content__price">$39</div>
+          <div class="products__content__stars">
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star far fa-star"></i>
+            <i class="products__star far fa-star"></i>
+          </div>
+          <a href="#" class="btn">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="products__box box">
+          <div class="products__icons icons">
+            <a href="#" class="products__icon fas fa-heart"></a>
+            <a href="#" class="products__icon fas fa-share"></a>
+            <a href="#" class="products__icon far fa-eye"></a>
+          </div>
+          <img src="images/Products/p5.jpg" alt="WILLOW & SWEET AGAVE PLUMPING LIP MASK" class="products__image">
+          <div class="products__content">
+            <h2 class="products__title">WILLOW & SWEET AGAVE PLUMPING LIP MASK</h2>
+          <div class="products__content__price">$28</div>
+          <div class="products__content__stars">
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+          </div>
+          <a href="#" class="btn">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="products__box box">
+          <div class="products__icons icons">
+            <a href="#" class="products__icon fas fa-heart"></a>
+            <a href="#" class="products__icon fas fa-share"></a>
+            <a href="#" class="products__icon far fa-eye"></a>
+          </div>
+          <img src="images/Products/p6.jpg" alt="TRIPLE VITAMIN C BRIGHTENING BOUNCE CREAM MOISTURIZER" class="products__image">
+          <div class="products__content">
+            <h2 class="products__title">TRIPLE VITAMIN C BRIGHTENING BOUNCE CREAM MOISTURIZER</h2>
+          <div class="products__content__price">$28</div>
+          <div class="products__content__stars">
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+            <i class="products__star fas fa-star"></i>
+          </div>
+          <a href="#" class="btn">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
     <section class="featured" id="featured">
@@ -269,26 +268,26 @@
       <div class="featured__row row">
         <div class="featured__image-container image-container">
           <div class="featured__small-image small-image">
-            <img src="images/Featured1/2.jpg" alt="WILD NETTLE & NIACINAMIDE FIRMING SERUM" class="featured-image-1">
-            <img src="images/Featured1/3.jpg" alt="WILD NETTLE & NIACINAMIDE FIRMING SERUM" class="featured-image-1">
-            <img src="images/Featured1/4.jpg" alt="WILD NETTLE & NIACINAMIDE FIRMING SERUM" class="featured-image-1">
-            <img src="images/Featured1/5.jpg" alt="WILD NETTLE & NIACINAMIDE FIRMING SERUM" class="featured-image-1">
+            <img src="images/Featured1/2.jpg" alt="WILD NETTLE & NIACINAMIDE FIRMING SERUM" class="featured-image featured-image-1">
+            <img src="images/Featured1/3.jpg" alt="WILD NETTLE & NIACINAMIDE FIRMING SERUM" class="featured-image featured-image-1">
+            <img src="images/Featured1/4.jpg" alt="WILD NETTLE & NIACINAMIDE FIRMING SERUM" class="featured-image featured-image featured-image-1">
+            <img src="images/Featured1/5.jpg" alt="WILD NETTLE & NIACINAMIDE FIRMING SERUM" class="featured-image featured-image-1">
           </div>
 
-          <div class="featured__big-image big-image">
-            <img src="images/Featured1/1.jpg" alt="WILD NETTLE & NIACINAMIDE FIRMING SERUM" class="big-image-1">
+          <div class="featured__big-image">
+            <img src="images/Featured1/1.jpg" alt="WILD NETTLE & NIACINAMIDE FIRMING SERUM" class="big-image big-image-1">
           </div>
         </div>
         <div class="featured__content content">
-          <h2>WILD NETTLE & NIACINAMIDE FIRMING SERUM</h2>
+          <h2 class="featured__title">WILD NETTLE & NIACINAMIDE FIRMING SERUM</h2>
           <div class="featured__stars stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
+            <i class="featured__star fas fa-star"></i>
+            <i class="featured__star fas fa-star"></i>
+            <i class="featured__star fas fa-star"></i>
+            <i class="featured__star fas fa-star"></i>
+            <i class="featured__star far fa-star"></i>
           </div>
-          <p>Award-winning retinol alternative</p>
+          <p class="featured__description">Award-winning retinol alternative</p>
           <div class="featured__price price">$58.00</div>
           <a href="#" class="btn">Add to cart</a>
         </div>
@@ -297,25 +296,25 @@
       <div class="featured__row row">
         <div class="featured__image-container image-container">
           <div class="featured__small-image small-image">
-            <img src="images/Featured2/2.jpg" alt="CREAMY BUBBLING CLEANSER WITH FRUIT ENZYMES & AHAS" class="featured-image-2">
-            <img src="images/Featured2/3.jpg" alt="CREAMY BUBBLING CLEANSER WITH FRUIT ENZYMES & AHAS" class="featured-image-2">
-            <img src="images/Featured2/4.jpg" alt="CREAMY BUBBLING CLEANSER WITH FRUIT ENZYMES & AHAS" class="featured-image-2">
-            <img src="images/Featured2/5.jpg" alt="CREAMY BUBBLING CLEANSER WITH FRUIT ENZYMES & AHAS" class="featured-image-2">
+            <img src="images/Featured2/2.jpg" alt="CREAMY BUBBLING CLEANSER WITH FRUIT ENZYMES & AHAS" class="featured-image featured-image-2">
+            <img src="images/Featured2/3.jpg" alt="CREAMY BUBBLING CLEANSER WITH FRUIT ENZYMES & AHAS" class="featured-image featured-image-2">
+            <img src="images/Featured2/4.jpg" alt="CREAMY BUBBLING CLEANSER WITH FRUIT ENZYMES & AHAS" class="featured-image featured-image-2">
+            <img src="images/Featured2/5.jpg" alt="CREAMY BUBBLING CLEANSER WITH FRUIT ENZYMES & AHAS" class="featured-image featured-image-2">
           </div>
-          <div class="featured__big-image big-image">
-            <img src="images/Featured2/1.jpg" alt="CREAMY BUBBLING CLEANSER WITH FRUIT ENZYMES & AHAS" class="big-image-2">
+          <div class="featured__big-image">
+            <img src="images/Featured2/1.jpg" alt="CREAMY BUBBLING CLEANSER WITH FRUIT ENZYMES & AHAS" class="big-image big-image-2">
           </div>
         </div>
         <div class="featured__content content">
-          <h3>CREAMY BUBBLING CLEANSER WITH FRUIT ENZYMES & AHAS</h3>
-          <div class="featured__stars stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+          <h3 class="featured__title">CREAMY BUBBLING CLEANSER WITH FRUIT ENZYMES & AHAS</h3>
+          <div class="featured__star featured__stars stars">
+            <i class="featured__star fas fa-star"></i>
+            <i class="featured__star fas fa-star"></i>
+            <i class="featured__star fas fa-star"></i>
+            <i class="featured__star fas fa-star"></i>
+            <i class="featured__star fas fa-star"></i>
           </div>
-          <p>Gentle Exfoliation While Maintaining Skin’s PH</p>
+          <p class="featured__description">Gentle Exfoliation While Maintaining Skin’s PH</p>
           <div class="featured__price price">$36.00</div>
           <a href="#" class="btn">Add to cart</a>
         </div>
@@ -324,129 +323,129 @@
       <div class="featured__row row">
         <div class="featured__image-container image-container">
           <div class="featured__small-image small-image">
-            <img src="images/Featured3/2.jpg" alt="BEARBERRY & VITAMIN C GLOW SERUM" class="featured-image-3">
-            <img src="images/Featured3/3.jpg" alt="BEARBERRY & VITAMIN C GLOW SERUM" class="featured-image-3">
-            <img src="images/Featured3/4.jpg" alt="BEARBERRY & VITAMIN C GLOW SERUM" class="featured-image-3">
-            <img src="images/Featured3/5.jpg" alt="BEARBERRY & VITAMIN C GLOW SERUM" class="featured-image-3">
+            <img src="images/Featured3/2.jpg" alt="BEARBERRY & VITAMIN C GLOW SERUM" class="featured-image featured-image-3">
+            <img src="images/Featured3/3.jpg" alt="BEARBERRY & VITAMIN C GLOW SERUM" class="featured-image featured-image-3">
+            <img src="images/Featured3/4.jpg" alt="BEARBERRY & VITAMIN C GLOW SERUM" class="featured-image featured-image-3">
+            <img src="images/Featured3/5.jpg" alt="BEARBERRY & VITAMIN C GLOW SERUM" class="featured-image featured-image-3">
           </div>
-          <div class="featured__big-image big-image">
-            <img src="images/Featured3/1.jpg" alt="BEARBERRY & VITAMIN C GLOW SERUM" class="big-image-3">
+          <div class="featured__big-image">
+            <img src="images/Featured3/1.jpg" alt="BEARBERRY & VITAMIN C GLOW SERUM" class="big-image big-image-3">
           </div>
         </div>
         <div class="featured__content content">
-          <h3>BEARBERRY & VITAMIN C GLOW SERUM</h3>
+          <h3 class="featured__title">BEARBERRY & VITAMIN C GLOW SERUM</h3>
           <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+            <i class="featured__star fas fa-star"></i>
+            <i class="featured__star fas fa-star"></i>
+            <i class="featured__star fas fa-star"></i>
+            <i class="featured__star fas fa-star"></i>
+            <i class="featured__star fas fa-star"></i>
           </div>
-          <p>Instantly imparts a radiant glow</p>
+          <p class="featured__description">Instantly imparts a radiant glow</p>
           <div class="featured__price price">$59.00</div>
           <a href="#" class="btn">Add to cart</a>
         </div>
       </div>
     </section>
 
-
     <section class="review" id="review">
       <h1 class="review__heading heading">Customer's review</h1>
-      
-      <div class="review__box-container">
-      
-      <div class="review__box"> 
-      <img src="images/Review/Adam Smith.jpg" alt="Review/AdamSmith">
-      <h2>Adam Smith</h2>
-      <p>I purchased Alpyn Beauty products as a gift for my wife, and I must say, I was impressed with the quality and effectiveness of the products. The packaging is also beautiful and makes for a great gift presentation. I highly recommend this brand for anyone looking for a high-quality, natural body care brand for women.</p>
-      <div class="review__box-stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="far fa-star"></i>
-      </div>
-      </div>
+        <div class="review__box-container">
 
-    <div class="review__box"> 
-        <img src="images/Review/Avery Johnson.jpg" alt="Review/AveryJohnson">
-        <h2>Avery Johnson</h2>
-        <p>I am absolutely in love with Alpyn Beauty! As someone who struggles with dry skin, their products have been a game changer for me.</p>
+          <div class="review__box"> 
+          <img src="images/Review/Adam Smith.jpg" alt="Review/AdamSmith" class="box__image">
+          <h2 class="box__name">Adam Smith</h2>
+          <p class="box__text">I purchased Alpyn Beauty products as a gift for my wife, and I must say, I was impressed with the quality and effectiveness of the products. The packaging is also beautiful and makes for a great gift presentation. I highly recommend this brand for anyone looking for a high-quality, natural body care brand for women.</p>
           <div class="review__box-stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+          <i class="review__stars__icon fas fa-star"></i>
+          <i class="review__stars__icon fas fa-star"></i>
+          <i class="review__stars__icon fas fa-star"></i>
+          <i class="review__stars__icon fas fa-star"></i>
+          <i class="review__stars__icon far fa-star"></i>
           </div>
-    </div>
+          </div>
 
-    <div class="review__box"> 
-      <img src="images/Review/Sophia Rodriguez.jpg" alt="Review/SophiaRodriguez">
-      <h2>Sophia Rodriguez</h2>
-      <p>My skin feels smoother and looks brighter after just a few uses. The packaging is also very chic and looks great on my vanity. I love that this brand uses natural ingredients and is environmentally conscious. Definitely recommend trying this product out!</p>
-        <div class="review__box-stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="far fa-star"></i>
-        </div>
-  </div>
+          <div class="review__box"> 
+              <img src="images/Review/Avery Johnson.jpg" alt="Review/AveryJohnson" class="box__image">
+              <h2 class="box__name">Avery Johnson</h2>
+              <p class="box__text">I am absolutely in love with Alpyn Beauty! As someone who struggles with dry skin, their products have been a game changer for me.</p>
+                <div class="review__box-stars">
+                  <i class="review__stars__icon fas fa-star"></i>
+                  <i class="review__stars__icon fas fa-star"></i>
+                  <i class="review__stars__icon fas fa-star"></i>
+                  <i class="review__stars__icon fas fa-star"></i>
+                  <i class="review__stars__icon fas fa-star-half-alt"></i>
+                </div>
+          </div>
+
+          <div class="review__box"> 
+            <img src="images/Review/Sophia Rodriguez.jpg" alt="Review/SophiaRodriguez" class="box__image">
+            <h2 class="box__name">Sophia Rodriguez</h2>
+            <p class="box__text">My skin feels smoother and looks brighter after just a few uses. The packaging is also very chic and looks great on my vanity. I love that this brand uses natural ingredients and is environmentally conscious. Definitely recommend trying this product out!</p>
+              <div class="review__box-stars">
+                <i class="review__stars__icon fas fa-star"></i>
+                <i class="review__stars__icon fas fa-star"></i>
+                <i class="review__stars__icon fas fa-star"></i>
+                <i class="review__stars__icon fas fa-star"></i>
+                <i class="review__stars__icon far fa-star"></i>
+              </div>
+          </div>
     </div>
   </section>
 
-    <section class="newsletter">
-      <div class="newsletter__content">
-        <h2>Monthly newsletter</h2>
-        <p>Join our monthly newsletter and be the first to know about our latest product releases, exclusive promotions, and beauty tips.</p>
-        <form action="">
-          <input type="email" placeholder="enter your email" class="newsletter__box">
-          <input type="submit" value="send" class="btn">
-        </form>
-      </div>
-    </section>
+  <section class="newsletter">
+    <div class="newsletter__content">
+      <h2 class="newsletter__title">Monthly newsletter</h2>
+      <p class="newsletter__description">Join our monthly newsletter and be the first to know about our latest product releases, exclusive promotions, and beauty tips.</p>
+      <form action=""  class="newsletter__form">
+        <input type="email" placeholder="enter your email" class="newsletter__box" class="newsletter__input">
+        <input type="submit" value="send" class="newsletter__submit btn">
+      </form>
+    </div>
+  </section>
 
-  
   <section class="footer">
-    <footer>
+    <footer class="footer__container">
     <div class="footer__box-container">
       <div class="footer__box">
-        <h3>Our stores</h3>
-        <a href="#">Turkiye</a>
-        <a href="#">USA</a>
-        <a href="#">Netherlands</a>
-        <a href="#">Germany</a>
+        <h3 class="footer__box-title">Our stores</h3>
+        <a href="#" class="footer__box-link">Turkiye</a>
+        <a href="#" class="footer__box-link">USA</a>
+        <a href="#" class="footer__box-link">Netherlands</a>
+        <a href="#" class="footer__box-link">Germany</a>
       </div>
 
       <div class="footer__box">
-        <h3>Quick links</h3>
-        <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">Featured</a>
-        <a href="#">Review</a>
+        <h3 class="footer__box-title">Quick links</h3>
+        <a href="#" class="footer__box-link">Home</a>
+        <a href="#" class="footer__box-link">Products</a>
+        <a href="#" class="footer__box-link">Featured</a>
+        <a href="#" class="footer__box-link">Review</a>
       </div>
 
       <div class="footer__box">
-        <h3>Extra links</h3>
-        <a href="#">My account</a>
-        <a href="#">My favorites</a>
-        <a href="#">My orders</a>
-        <a href="#">Newsletter</a>
+        <h3 class="footer__box-title">Extra links</h3>
+        <a href="#" class="footer__box-link">My account</a>
+        <a href="#" class="footer__box-link">My favorites</a>
+        <a href="#" class="footer__box-link">My orders</a>
+        <a href="#" class="footer__box-link">Newsletter</a>
       </div>
 
       <div class="footer__box">
-        <h3>Follow us</h3>
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
+        <h3 class="footer__box-title">Follow us</h3>
+        <a href="#" class="footer__box-link">Facebook</a>
+        <a href="#" class="footer__box-link">Twitter</a>
+        <a href="#" class="footer__box-link">Instagram</a>
+        <a href="#" class="footer__box-link">LinkedIn</a>
       </div>
 
-  <div class="credit"> Created by <span>HitaBeeDev</span></span> <span> (All data belongs to Alpyn Beauty) </span></div>
+  <div class="credit"> Created by <a href="https://github.com/HitaBeeDev" class="credit__link">HitaBeeDev</a> <span class="credit__company">| (All data belongs to Alpyn Beauty) </span></div>
     </div>
   </footer>
 </section>
     <script src="script.js"></script>
   </body>
 </html>
+
+
+
