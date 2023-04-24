@@ -1,7 +1,12 @@
 "use strict";
 
-let menu = document.querySelector("#menu-bar");
-let navbar = document.querySelector(".navbar");
+const menu = document.querySelector("#menu-bar");
+const navbar = document.querySelector(".navbar");
+const darkThemeBtn = document.getElementById("dark");
+
+darkThemeBtn.onclick = function () {
+  document.body.classList.toggle("dark-theme");
+};
 
 menu.addEventListener("click", function () {
   menu.classList.toggle("fa-times");
